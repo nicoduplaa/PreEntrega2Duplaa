@@ -1,0 +1,119 @@
+/* FAQ */
+
+.faqtitle {
+    @include flex (row, center, center);
+    letter-spacing: 2px;
+    background-color: $terctono;
+    color: $blanco;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.faqcontainer {
+    margin: 4rem auto;
+    padding: 5rem;
+    width: 100rem;
+    align-items: center;
+    background-color: $primario;
+    border-radius: 8%;
+    border:  2px solid $secundario;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: 10px solid $sectono;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.faqblock h2 {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 2rem;
+    color: $terciario;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.faqblock h2:hover {
+    cursor: default;
+}
+
+.faqitem {
+    background-color:rgb(249, 249, 249);
+    padding: 2rem;
+    margin: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: 6px solid $blanco;
+    transition: 0.4s;
+}
+
+.faqitem:hover {
+    border-top: 12px solid $blanco;
+    transform: scale(1.05);
+}
+
+.faqitem:hover h2 {
+    font-size: 2.3rem;
+}
+
+.faqblock .faqitem {
+    border-bottom: 2px solid rgb(36, 36, 36);
+}
+
+
+
+.faqblock h2 .faqbutton-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+@media (max-width: 1000px) {
+    .faqcontainer {
+        @include flex (row, center, center);
+        margin: 4rem auto;
+        padding: 3rem 2rem;
+        width: 740px;
+    }
+
+    .faqblock h2 {
+        padding: 0;
+    }
+
+    .faqitem:hover h2 {
+        font-size: 2.1rem;
+    }
+
+    .faqitem {
+        padding: 2.5rem;
+    }
+
+    .faqcontent {
+        text-align: justify;
+    }
+
+    .faqitem p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faqcontainer {
+        @include flex (row, center, center);
+        margin: 4rem 0rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .faqblock h2 {
+        padding: 0;
+    }
+
+    .faqitem {
+        padding: 1.5rem;
+    }
+
+    .faqcontent {
+        text-align: justify;
+    }
+}

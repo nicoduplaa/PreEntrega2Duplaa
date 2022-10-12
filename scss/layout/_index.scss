@@ -1,0 +1,97 @@
+/*HOME*/
+
+.homeback {
+    background-image: url(../assets/home-3.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.hometitle {
+    
+    background-color: $terctono;
+    color: $blanco;
+    transform: skewX(160deg);
+    @include ancho-alto (fit-content, fit-content);
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    transition: 0.4s;
+}
+.hometitle:hover {
+    font-size: 7rem;
+    @include ancho-alto (fit-content, fit-content);
+    transform: skewX(150deg);
+    cursor: default;
+}
+
+.homelist {
+    margin-left: 60px;
+    margin-top: 50px;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.homebutton {
+    border: none;
+    margin-left: 11rem;
+    padding: 1.5rem 5rem;
+    font-family: 'Aboreto';
+    background-color: $terciario;
+    color: $blanco;
+    font-size: large;
+    border-radius: 2rem;
+    border-top: 1px solid $primario;
+    transition: 0.5s;
+    letter-spacing: 1px;
+
+}
+
+.homebutton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+    .homeback {
+        background-image: url(../assets/home.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+        padding-bottom: 4rem;
+    }
+
+    .hometitle {
+        transform: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hometitle:hover {
+        font-size: 7rem;
+        @include ancho-alto (fit-content, fit-content);
+        cursor: default;
+    }
+
+    .homelist {
+        color: $negro;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+
+    .text-macetas {
+        color: $blanco;
+    }
+
+    .homebutton {
+        margin: 0 2.5rem;
+        width: fit-content;
+        padding: 0.5rem;
+    }
+}

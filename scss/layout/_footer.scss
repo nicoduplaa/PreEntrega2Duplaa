@@ -1,0 +1,24 @@
+/*FOOTER*/
+
+#footer {
+    background-color: $sectono;
+    border-top: 2px solid $negro;
+    padding: 1rem;
+    @include ancho-alto (100%, 50px);
+    @include flex (row, none, none);
+    bottom: 0;
+    position: sticky;
+}
+.footext {
+    font-weight: 700;
+    @include flex (row, left, none);
+    margin: auto auto auto 0;
+}
+
+.footicon {
+    @include flex (row, right, center);
+    a {
+        padding: 0 0.5rem;
+        transform: scale(0.8);
+    }
+}

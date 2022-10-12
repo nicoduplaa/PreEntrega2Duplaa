@@ -1,0 +1,144 @@
+/*PRODUCTOS*/
+
+
+.productos {
+    margin: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*Tarjetas*/
+
+.product-title {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $terctono;
+    width: 45%;
+    transform: skewX(160deg);
+    transition: 0.5s;
+    h2 {
+        font-size: 6rem;
+        color: $blanco;
+    }
+    
+}
+
+.product-title:hover {
+    transform: skewX(150deg);
+}
+
+
+.card {
+    position: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 0;
+    width: fit-content;
+    transform: scale(0.8);
+
+    img {
+        object-fit: contain;
+        @include ancho-alto (400px, 400px);
+        padding: 10px 10px 0 10px;
+        background-color: $blanco;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+
+.card-cont {
+    @include flex (column, center, center);
+    padding: 0 0 2rem 0;
+    background-color: $terciario;
+    color: $blanco;
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    p {
+        padding: 0 0 4rem 0;
+    }
+
+    button {
+        @include flex (row, center, center);
+        border: none;
+        background-color: $sectono;
+        border-radius: 100%;
+        padding-top: 0;
+        @include ancho-alto (60px, 60px);
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+        transition: 0.4s;
+    }
+
+    button:hover {
+        transform: scale(1.2);
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+}
+
+
+.card:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width: 1000px ) {
+    .product-title:hover {
+        transform: none;
+    }
+
+    .productos {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        transform: scale(0.75);
+    }
+
+    .card:hover{
+        transform: scale(0.8);
+    }
+
+    .card-cont p {
+        font-size: 3rem;
+    }
+    
+} 
+
+@media (max-width: 480px ) {
+    .product-title {
+        width: fit-content;
+        transform: none;
+
+        h2 {
+            font-size: 5rem;
+        }
+    }
+    .product-title:hover {
+        transform: none;
+    }
+    
+    .productos {
+        margin: 0 auto;
+        @include flex (column, center, center);
+        width: 100%;
+    }
+
+    .card {
+        transform: scale(0.75);
+    }
+
+    .card:hover{
+        transform: scale(0.8);
+    }
+    
+}

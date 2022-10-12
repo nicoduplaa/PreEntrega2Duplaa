@@ -1,0 +1,31 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Hack para Box Model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Aboreto';
+    background-color: var(--blanco);
+    p {
+        font-family: 'Nunito';
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+
+
