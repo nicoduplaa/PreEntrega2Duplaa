@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*COLORES*/
 html {
   font-size: 62.5%;
@@ -47,7 +46,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: 0.3s; }
+  transition: 0.3s;
+  font-family: 'Aboreto';
+  text-transform: uppercase; }
 
 .navtext {
   font-size: 1.5rem;
@@ -257,389 +258,6 @@ body {
     width: fit-content;
     padding: 0.5rem; } }
 
-/* FAQ */
-.faqtitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 2px;
-  background-color: #E33227;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1rem; }
-
-.faqcontainer {
-  margin: 4rem auto;
-  padding: 5rem;
-  width: 100rem;
-  align-items: center;
-  background-color: #F9E9DA;
-  border-radius: 8%;
-  border: 2px solid #E9C9AE;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top: 10px solid #D3CDAE;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5); }
-
-.faqblock h2 {
-  display: block;
-  text-align: left;
-  width: 100%;
-  padding: 1em 0;
-  font-size: 2rem;
-  color: #960900;
-  font-weight: 400;
-  transition: 0.4s; }
-
-.faqblock h2:hover {
-  cursor: default; }
-
-.faqitem {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  margin: 2rem;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top: 6px solid white;
-  transition: 0.4s; }
-
-.faqitem:hover {
-  border-top: 12px solid white;
-  transform: scale(1.05); }
-
-.faqitem:hover h2 {
-  font-size: 2.3rem; }
-
-.faqblock .faqitem {
-  border-bottom: 2px solid #242424; }
-
-.faqblock h2 .faqbutton-title {
-  padding: 1em 1.5em 1em 0; }
-
-@media (max-width: 1000px) {
-  .faqcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem auto;
-    padding: 3rem 2rem;
-    width: 740px; }
-  .faqblock h2 {
-    padding: 0; }
-  .faqitem:hover h2 {
-    font-size: 2.1rem; }
-  .faqitem {
-    padding: 2.5rem; }
-  .faqcontent {
-    text-align: justify; }
-  .faqitem p {
-    font-size: 2rem; } }
-
-@media (max-width: 480px) {
-  .faqcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0rem;
-    padding: 0;
-    width: 100%; }
-  .faqblock h2 {
-    padding: 0; }
-  .faqitem {
-    padding: 1.5rem; }
-  .faqcontent {
-    text-align: justify; } }
-
-/*CONTACTO*/
-.contactotitle {
-  margin: 0 auto;
-  text-align: center;
-  background-color: #E33227;
-  color: white;
-  width: 650px;
-  transform: skewX(160deg);
-  transition: 0.5s; }
-
-.contactotitle:hover {
-  transform: skewX(150deg); }
-
-.form-redes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0; }
-
-/*Formulario*/
-.formcont {
-  margin: 0 auto;
-  width: 90%;
-  background-color: #E9C9AE;
-  padding: 2rem;
-  border-radius: 10px;
-  border-top: 9px solid #F9E9DA;
-  transition: 0.5s;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5); }
-  .formcont fieldset {
-    border: none; }
-
-.formcont:hover {
-  transform: scale(1.05); }
-
-.camposcont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.campos {
-  padding: 3rem; }
-  .campos label {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin-bottom: 5px;
-    position: relative;
-    width: fit-content;
-    color: white;
-    font-weight: 900; }
-  .campos label::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #960900, #E33227, #960900);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out; }
-  .campos label:hover::before {
-    transform: scaleX(1); }
-  .campos input {
-    border: none;
-    padding: 5px;
-    width: 500px; }
-  .campos textarea {
-    border: none;
-    padding: 5px;
-    width: 500px;
-    height: 100px; }
-
-.boton {
-  border: none;
-  background-color: #E33227;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-family: 'Aboreto';
-  border-top: 2px solid white;
-  transition: 0.4s; }
-
-.boton:hover {
-  transform: scale(1.1); }
-
-/*Redes*/
-.redes_cont {
-  margin: 0 2rem;
-  width: fit-content;
-  height: 100%;
-  background-color: #F9E9DA;
-  transition: 0.4s;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5); }
-
-.redes_cont:hover {
-  transform: scale(1.05); }
-
-.redes_title {
-  text-align: center;
-  margin: 0 auto;
-  padding: 2rem;
-  border-bottom: 1px solid black;
-  color: white;
-  background-color: #E33227; }
-
-.redes_icon {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 10rem; }
-
-.iconfondo {
-  background-color: #D3CDAE;
-  border-radius: 100%;
-  width: 15rem;
-  height: 15rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1.1);
-  transition: 0.5s;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5); }
-
-.iconfondo:hover {
-  transform: scale(1.3); }
-
-/*Mapa*/
-.map {
-  display: flex;
-  justify-content: center;
-  background-color: #E33227;
-  width: fit-content;
-  padding: 0rem;
-  margin: 4rem auto;
-  border: 5px solid #960900;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.5s; }
-
-@media (max-width: 1000px) {
-  /*FORMULARIO*/
-  .form-redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .contactotitle {
-    width: 100%;
-    transform: none; }
-  .contactotitle:hover {
-    transform: none; }
-  .formcont {
-    margin: 1rem auto 3rem;
-    width: fit-content;
-    padding: 0.5rem; }
-  .formcont:hover {
-    transform: none; }
-  .campos {
-    padding: 2rem; }
-    .campos input {
-      width: 400px; }
-    .campos textarea {
-      width: 400px; }
-  /*REDES*/
-  .redes_icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: none;
-    padding-top: 1rem; }
-  .iconfondo {
-    width: 13rem;
-    height: 13rem;
-    margin-top: 3rem;
-    margin-bottom: 3.5rem; }
-  .redes_cont:hover {
-    transform: none; }
-  /*MAPA*/
-  .map {
-    align-items: center;
-    width: 700px; } }
-
-@media (max-width: 480px) {
-  /*FORMULARIO*/
-  .form-redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .contactotitle {
-    width: 100%;
-    transform: none; }
-  .contactotitle:hover {
-    transform: none; }
-  .formcont {
-    margin: 1rem auto 3rem;
-    width: 330px;
-    padding: 0.5rem; }
-  .formcont:hover {
-    transform: none; }
-  .campos {
-    padding: 2rem; }
-    .campos input {
-      width: fit-content; }
-    .campos textarea {
-      width: fit-content; }
-  /*REDES*/
-  .redes_icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem; }
-  .iconfondo {
-    width: 13rem;
-    height: 13rem;
-    margin-top: 3rem;
-    margin-bottom: 3.5rem; }
-  /*MAPA*/
-  .map {
-    align-items: center;
-    width: 330px; } }
-
-/*PROXIMAMENTE*/
-.prox-cont, .rev {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0rem;
-  transition: 0.4s; }
-
-/* No encontre forma de usar el extend en esta parte, debido a que mas abajo tengo que usar un wrap reverse y este no se aplicaría ya que en el mq me sigue aplicando el extend de antes. Quizas haciendo otro parshal para los mq sería factible, pero me gusta trabajar con los mq en la misma pagina donde van a afectar */
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .text h2 {
-    color: #960900;
-    font-size: 3rem;
-    transition: 0.4s; }
-
-.prox-cont img, .rev img {
-  width: 700px;
-  height: 700px;
-  object-fit: contain; }
-
-.prox-cont:hover, .rev:hover {
-  font-size: larger; }
-
-.prox-cont:hover h2, .rev:hover h2 {
-  font-size: 4rem; }
-
-@media (max-width: 1000px) {
-  .prox-cont img, .rev img {
-    width: 100%;
-    height: fit-content; } }
-
-@media (max-width: 480px) {
-  .prox-cont {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: 0.4s; }
-  .rev {
-    display: flex;
-    flex-wrap: wrap-reverse; }
-  .prox-cont img, .rev img {
-    width: 100%;
-    height: fit-content; }
-  .text {
-    width: fit-content;
-    height: 300px; }
-    .text p {
-      margin: 0 auto; }
-    .text h2 {
-      font-size: 3rem; }
-  .prox-cont:hover {
-    font-size: 16px; }
-  .prox-cont:hover h2 {
-    font-size: 3rem; } }
-
 /*PRODUCTOS*/
 .productos {
   margin: 0 10px 10px 10px;
@@ -692,7 +310,7 @@ body {
   .card-cont h4 {
     font-size: 3rem; }
   .card-cont p {
-    padding: 0 0 4rem 0; }
+    padding: 0 0 0rem 0; }
   .card-cont button {
     display: flex;
     flex-direction: row;
@@ -747,3 +365,25 @@ body {
     transform: scale(0.75); }
   .card:hover {
     transform: scale(0.8); } }
+
+.title-cart {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #E33227;
+  font-family: 'Aboreto';
+  color: white;
+  font-size: 6rem; }
+
+#cart-container table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed; }
+
+#cart-container table thead {
+  font-weight: 700; }
+
+#cart-container table thead td {
+  background-color: #960900;
+  color: white;
+  border: none;
+  padding: 6px 0; }
