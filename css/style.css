@@ -451,25 +451,3 @@ body {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em; }
-
-.title-cart {
-  margin: 0 auto;
-  text-align: center;
-  background-color: #E33227;
-  font-family: 'Aboreto';
-  color: white;
-  font-size: 6rem; }
-
-#cart-container table {
-  border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed; }
-
-#cart-container table thead {
-  font-weight: 700; }
-
-#cart-container table thead td {
-  background-color: #960900;
-  color: white;
-  border: none;
-  padding: 6px 0; }
