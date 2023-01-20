@@ -1,0 +1,55 @@
+let inventary = [
+    {
+        id: 1, 
+        img:"../assets/img_cemento/cat.jpg", 
+        nombre:'GATO', 
+        precio:'$900', 
+        tipo:'Maceta de Cemento',
+        cantidad: 1
+    },
+
+    {
+        id: 2, 
+        img:"../assets/img-color/buho.jpg", 
+        nombre:'BUHO', 
+        precio:'$1050', 
+        tipo:'Maceta Coloreada',
+        cantidad: 1
+    },
+
+    {
+        id: 3, 
+        img:"../assets/img_cemento/dode.jpg", 
+        nombre:'DODECAEDRO', 
+        precio:'$900',
+        tipo:'Maceta de Cemento',
+        cantidad: 1
+    },
+
+    {
+        id: 4, 
+        img:"../assets/img-color/llama.jpg", 
+        nombre: 'LLAMA', 
+        precio: '$1100',
+        tipo:'Maceta Coloreada',
+        cantidad: 1
+    },
+
+    {
+        id: 5, 
+        img:"../assets/img_cemento/ele.jpg", 
+        nombre: 'ELEFANTE', 
+        precio: '$900',
+        tipo:'Maceta de Cemento' ,
+        cantidad: 1
+    },
+
+    {
+        id: 6, 
+        img:"../assets/img-color/sonic.jpg", 
+        nombre: 'ERIZO', 
+        precio: '$1100',
+        tipo:'Maceta Coloreada',
+        cantidad: 1
+    }
+]

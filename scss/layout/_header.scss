@@ -8,6 +8,8 @@
     top: 0;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 30;
 }
 
 .navcont {
@@ -111,6 +113,29 @@
     box-shadow: -20px 0 40px rgba(0, 0, 0, 0.5);
 }
 
+.ver-carrito {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border: none;
+    background-color: none;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 8px;
+    top: 65px;
+    right: 30px;
+    position: absolute;
+    display: none;
+}
+
 @media (max-width: 480px ) { 
     .hamburguer,
     .menu {
@@ -140,3 +165,6 @@
         margin-left: 30%;
     }
 }
+
+
+

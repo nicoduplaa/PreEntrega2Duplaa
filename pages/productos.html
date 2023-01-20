@@ -55,6 +55,17 @@
 
                 <div class="nav-list">
                     <a class="navtext" href="./productos.html">productos</a>
+
+                    <button class="ver-carrito" id="verCarrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                      <span id="cantidadCarrito" class="cantidad-carrito"></span>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -66,30 +77,14 @@
         <h2>ELIGE TU FAVORITA</h2>
     </section>
 
-    <section class="productos">
+    <section class="productos" id="shop">
 
     </section>
 
-    <section class="container cont-sect">
-        <h2 class="section-header">CART</h2>
-        
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-        </div>
 
-        <div class="cart-items">
-        </div>
+    <div id="modal-container" class="container cont-sect">
 
-        <div class="cart-total">
-            <strong class="cart-total-title">TOTAL</strong>
-            <span class="cart-total-price">$0</span>
-        </div>
-
-            <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
-
-    </section>
+    </div>
 
     </main>
 
@@ -117,7 +112,9 @@
         </div>
     </footer>
 
-    <script src="../js/cart-test.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/carrito.js"></script>
 
 </body>
 </html>
