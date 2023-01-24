@@ -402,6 +402,9 @@ body {
   scrollbar-color: none;
   background-color: rgba(255, 159, 159, 0.897); }
 
+#modal-container a {
+  text-decoration: none; }
+
 #modal-container::-webkit-scrollbar {
   display: none; }
 
@@ -492,6 +495,7 @@ body {
   font-size: 1.1em; }
 
 .btn-purchase {
+  text-decoration: none;
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
@@ -505,3 +509,75 @@ body {
   cursor: pointer;
   background-color: #D3CDAE;
   color: black; }
+
+.contenedor-pago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  border-radius: 15px;
+  border: 6px solid rgba(150, 9, 0, 0.5);
+  width: 500px;
+  height: 550px;
+  background-color: #D3CDAE;
+  box-shadow: 0px 2px 15px black; }
+  .contenedor-pago .form-group {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    justify-content: space-between; }
+    .contenedor-pago .form-group label {
+      font-family: 'Nunito';
+      font-size: 20px;
+      margin-right: 10px; }
+  .contenedor-pago .form-end h1 {
+    text-align: center; }
+  .contenedor-pago .form-end a {
+    text-decoration: none; }
+  .contenedor-pago .form-end button {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.75em;
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: #960900;
+    color: white; }
+  .contenedor-pago .form-end button:hover {
+    cursor: pointer;
+    background-color: #E33227; }
+
+.finalbtn {
+  text-decoration: none; }
+
+#modalPago {
+  padding: 15px;
+  width: 80%;
+  max-height: 45rem;
+  position: fixed;
+  overflow: auto;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  top: -10vh;
+  scrollbar-color: none;
+  background-color: rgba(255, 159, 159, 0.897); }
+
+#modalPago a {
+  text-decoration: none; }
+
+#modalPago::-webkit-scrollbar {
+  display: none; }
+
+.modal-header-button {
+  float: right;
+  transform: translateY(-29px);
+  cursor: pointer; }
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 auto; }

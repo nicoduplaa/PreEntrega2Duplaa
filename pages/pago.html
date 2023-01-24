@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS -->
+
+    <!--ABORET0-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <!--NUNITO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!--SEO-->
+
+    <meta name="description" content="Somos un emprendimiento de creaciones para decorar todos tus ambientes y momentos. Usamos los mejores materiales para darte un producto estético y duradero.">
+
+    <meta name="author" content="Gerardo Nicolas Dupláa">
+
+    <meta name="copyright" content="Creaciones en Concreto">
+
+    <!--OPEN GRAPH-->
+
+    <meta property="og:title" content=Creaciones en Concreto>
+    <meta property="og:site_name" content=Creaciones en Concreto>
+    <meta property="og:url" content=www.cec.com.ar>
+    <meta property="og:description" content=Somos un emprendimiento de creaciones para decorar todos tus ambientes y momentos. Usamos los mejores materiales para darte un producto estético y duradero.>
+    <meta property="og:type" content=product>
+    <meta property="og:image" content=https://i.pinimg.com/originals/96/26/aa/9626aa4db124ba0fde88b0ac4f131bbf.jpg>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CEC - Pago</title>
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+    <main>
+        <div class="contenedor-pago" id="contenedorPago">
+            <div class="form-title">
+                <h2>CONFIRME SU COMPRA</h2>
+            </div>
+
+            <form>
+                <div class="form-group owner">
+                    <label for="owner">NOMBRE</label>
+                    <input type="text" id="owner">
+                </div>
+                <div class="form-group CVV">
+                    <label for="cvv">CVV</label>
+                    <input type="text"  id="cvv">
+                </div>
+                <div class="form-group" id="card-number-field">
+                    <label for="cardNumber">N° DE TARJETA</label>
+                    <input type="text"  id="cardNumber">
+                </div>
+                <div class="form-group" id="expiration-date">
+                    <label>FECHA DE VENCIMIENTO</label>
+                    <select id="mesVencimiento">
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select id="añoVencimiento">
+                        <option value="23"> 2023</option>
+                        <option value="24"> 2024</option>
+                        <option value="25"> 2025</option>
+                        <option value="26"> 2026</option>
+                        <option value="27"> 2027</option>
+                        <option value="28"> 2028</option>
+                        <option value="29"> 2029</option>
+                        <option value="30"> 2030</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- <div class="form-end">
+                <h1>$6000</h1>
+            </div> -->
+
+            <div class="form-end" id="payNow">
+                
+                <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+            </div>
+
+        </div>
+
+
+        <div class="modal-pago" id="modalPago">
+
+        </div>
+
+    </main>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pago.js"></script>
+
+</body>
+</html>

@@ -159,10 +159,17 @@
     top: 15vh;
     scrollbar-color: none;
     background-color: rgba(255, 159, 159, 0.897)
+
+
+}
+
+#modal-container a {
+    text-decoration: none;
 }
 
 #modal-container::-webkit-scrollbar {
     display: none;
+
 }
 
 .modal-header-button {
@@ -270,6 +277,7 @@
 }
 
 .btn-purchase {
+    text-decoration: none;
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;

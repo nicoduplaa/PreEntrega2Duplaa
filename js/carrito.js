@@ -72,9 +72,14 @@ const carritoShow = () => {
 
         cantidadInput.addEventListener("change", (event) => {
             let input = event.target
-            if (isNaN(input.value) || input.value <= 0) {
-                input.value = 1
-            }
+
+            //Uso de estructura avanzada if:
+
+            isNaN(input.value) || input.value <= 0 ? input.value = 1 :
+
+            // if (isNaN(input.value) || input.value <= 0) {
+            //     input.value = 1
+            // }
 
             product.cantidad = parseFloat(input.value);
 
@@ -103,11 +108,20 @@ const carritoShow = () => {
 
     //Comprar 
 
-    const comprarButton = document.createElement("button")
-    comprarButton.className = "btn-purchase";
-    comprarButton.innerText = "COMPRAR";
+   
 
-    modalContainer.append(comprarButton);
+
+    if (total > 0) {
+        const comprarButton = document.createElement("div")
+        comprarButton.innerHTML = `    
+            <a href="./pago.html">
+                <button class="btn-purchase" id="btnPurchase">
+                    COMPRAR
+                </button>
+            </a>` ;
+        
+        modalContainer.append(comprarButton);
+    }
 
 };
 
@@ -135,5 +149,7 @@ const carritoCounter = () => {
 
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
+
+
 
 carritoCounter();
